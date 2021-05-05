@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    
+    <script async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUl5X4vehwKF7XaxnhSE2tX8pJEnB4wuU&libraries=places">
+    </script>
+    
+    <title>Get Outside!</title>
+
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>
+      Get Outside and Visit a Park!
+    </h1>
+    <label for="rad">Search Radius (m)</label>
+    <input type="text" id="rad" name="rad" value="500">
+    <button onclick="changeRad()">
+      Submit
+    </button>
+    <div id="map"></div>
+  </body>
+</html>
